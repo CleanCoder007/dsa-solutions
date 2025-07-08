@@ -9,13 +9,13 @@ public class SquaresSortedArray {
 
     public int[] sortedSquares(int[] nums) {
         int[] copy=  nums.clone();
-        printArray(copy);
+//        printArray(copy);
         int p = nums.length-1;
         int q = 0;
         int r = nums.length-1;
 
         while( p >= 0 && r>=0){
-            System.out.println("nums[p] * nums[p] > nums[q] * nums[q] :" +nums[p]+ "*"+ nums[q]);
+//            System.out.println("nums[p] * nums[p] > nums[q] * nums[q] :" +nums[p]+ "*"+ nums[q]);
             if( (nums[ p ] * nums[ p ] )> (nums[ q ] * nums[ q ] )) {
                 copy[ r ] = nums[ p ] * nums[ p ];
                 p= p - 1;
@@ -25,7 +25,7 @@ public class SquaresSortedArray {
                 q= q + 1;
             }
             r=r-1;
-            printArray(copy);
+//            printArray(copy);
         }
         return copy;
     }
