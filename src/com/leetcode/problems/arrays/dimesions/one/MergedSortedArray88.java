@@ -1,4 +1,4 @@
-package com.leetcode.problems;
+package com.leetcode.problems.arrays.dimesions.one;
 
 import java.util.Arrays;
 
@@ -25,8 +25,7 @@ public class MergedSortedArray88 {
      * */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int[] combinedArray = new int[m+n];
-        for(int i=0; i<m ;i ++)
-            combinedArray[i] = nums1[i];
+        if (m >= 0) System.arraycopy(nums1, 0, combinedArray, 0, m);
 
         for(int j=0; j<n; j ++)
             combinedArray[m+j] = nums2[j];

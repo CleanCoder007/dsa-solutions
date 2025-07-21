@@ -1,4 +1,4 @@
-package com.leetcode.problems;
+package com.leetcode.problems.recursions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ public class CombinationsSumI {
         int[] candidates = {2,3,5};
         int target = 8;
 
-        helper(candidates,target,0,new ArrayList<Integer>());
+        helper(candidates,target,0,new ArrayList<>());
 
         System.out.println(uniqueCombinations);
     }
